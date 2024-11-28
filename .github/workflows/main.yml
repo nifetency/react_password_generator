@@ -18,26 +18,26 @@ jobs:
           args: "deploy --remote-only"
 
 eslint:
-  name: Run ESLint
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
+    name: Run ESLint
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
-    - name: Installing Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: "20"
+      - name: Installing Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "20"
 
-    - name: Installing project dependencies
-      run: npm install
+      - name: Installing project dependencies
+        run: npm install
 
-    - name: Install ESLint and TypeScript packages
-      run: npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+      - name: Install ESLint and TypeScript packages
+        run: npm install --save-dev eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
 
-    - name: Running ESLint
-      run: npm run lint
-      env:
-        CI: true
+      - name: Running ESLint
+        run: npm run lint
+        env:
+          CI: true
