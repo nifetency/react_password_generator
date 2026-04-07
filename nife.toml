@@ -1,11 +1,11 @@
-app = "pioneering-app-5760"
-github = "https://github.com/nifetency/react_password_generator/archive/refs/heads/main.zip"
-id = "479330a9859d6ec50f66ebf269b7051b02dd07376a72007acb10942a2801c1c667735aa9357ac862218f9cf7d1215b90"
+app = "calm-fox-4138"
+github = "https://github.com/rahul-nife/react_password_generator/archive/refs/heads/main.zip"
+id = "a9a9153d8d7f3b7ff98be002d9a0e51d966e8b49733307b6093e40abef3b4925506176a45a03744f1438dc20708df5c8"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
 [build]
-  builtin = "Github"
+  builtin = "GitHub"
 
 [env]
 
@@ -18,7 +18,7 @@ kill_timeout = 5
   http_checks = []
   internal_port = "3000"
   protocol = "tcp"
-  routing_policy = "Latency"
+  routing_policy = "latency"
   script_checks = []
 
   [services.concurrency]
@@ -27,8 +27,8 @@ kill_timeout = 5
     type = "connections"
 
   [services.limits]
-    cpu = "1"
-    memory = "256"
+    cpu = "500m"
+    memory = "1Gi"
 
   [[services.ports]]
     handlers = ["http"]
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "0.5"
-    memory = "128"
+    cpu = "250m"
+    memory = "512Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
