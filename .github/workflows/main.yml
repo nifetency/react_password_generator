@@ -1,4 +1,4 @@
-name: Deploy to Nife
+name: Deploy to Nif
 
 on:
   push:
