@@ -1,6 +1,6 @@
-app = "swift-app-8400"
+app = "brave-stack-5655"
 github = "https://github.com/rahul-nife/react_password_generator"
-id = "01a5243eefefb2ebdc5ab040da6f0d72cfa1bc1d1836ffeb34c1d8fedce3aa4ee6364cc9d07580edfc4afa772b8042f0"
+id = "df569daa8e32d221bd1e404d281dd30e4952e5f71c82bb94a9c0fd3b75e679c8461ca8bef77315f211ff95e0c4a6d31b"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "154m"
-    memory = "358Mi"
+    cpu = "250m"
+    memory = "512Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
