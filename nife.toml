@@ -1,6 +1,6 @@
-app = "calm-fox-4138"
+app = "lucky-spark-1186"
 github = "https://github.com/rahul-nife/react_password_generator/archive/refs/heads/main.zip"
-id = "a9a9153d8d7f3b7ff98be002d9a0e51d966e8b49733307b6093e40abef3b4925506176a45a03744f1438dc20708df5c8"
+id = "df3cbd214ff3b1cbcedf93d9c055b16ab622c1f82550adeacf7453d515e684f67a4655f43c4bc37a119fdd8dc56741e9"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -14,7 +14,7 @@ kill_timeout = 5
   auto_rollback = true
 
 [[services]]
-  external_port = "80"
+  external_port = "3000"
   http_checks = []
   internal_port = "3000"
   protocol = "tcp"
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "250m"
-    memory = "512Mi"
+    cpu = "193m"
+    memory = "358Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
