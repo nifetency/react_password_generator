@@ -1,6 +1,6 @@
-app = "lucky-wave-8674"
-github = "https://github.com/rahul-nife/react_password_generator/archive/refs/heads/main.zip"
-id = "76cb6fb80575d9f8ba0758f60501f0a392d3cbf887ed26e6238c295356f306e4382cb0680fb56ca6479df648e878fca6"
+app = "swift-app-8400"
+github = "https://github.com/rahul-nife/react_password_generator"
+id = "01a5243eefefb2ebdc5ab040da6f0d72cfa1bc1d1836ffeb34c1d8fedce3aa4ee6364cc9d07580edfc4afa772b8042f0"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -14,7 +14,7 @@ kill_timeout = 5
   auto_rollback = true
 
 [[services]]
-  external_port = "80"
+  external_port = "3000"
   http_checks = []
   internal_port = "3000"
   protocol = "tcp"
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "250m"
-    memory = "512Mi"
+    cpu = "154m"
+    memory = "358Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
