@@ -19,4 +19,4 @@ jobs:
         env:
           NIFE_ACCESS_TOKEN: ${{ secrets.NIFE_ACCESS_TOKEN }}
         with:
-          args: "deploy --remote-only"
+          args: "deploy --remote-only --skip-optimize"
