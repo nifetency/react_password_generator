@@ -1,6 +1,6 @@
-app = "lucky-spark-1186"
+app = "lucky-wave-8674"
 github = "https://github.com/rahul-nife/react_password_generator/archive/refs/heads/main.zip"
-id = "df3cbd214ff3b1cbcedf93d9c055b16ab622c1f82550adeacf7453d515e684f67a4655f43c4bc37a119fdd8dc56741e9"
+id = "76cb6fb80575d9f8ba0758f60501f0a392d3cbf887ed26e6238c295356f306e4382cb0680fb56ca6479df648e878fca6"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -14,7 +14,7 @@ kill_timeout = 5
   auto_rollback = true
 
 [[services]]
-  external_port = "3000"
+  external_port = "80"
   http_checks = []
   internal_port = "3000"
   protocol = "tcp"
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "193m"
-    memory = "358Mi"
+    cpu = "250m"
+    memory = "512Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
