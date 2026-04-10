@@ -201,51 +201,29 @@ https://<your-nife-url>
 
 Follow these steps to install and set up **nifectl**:
 
-### 1. Download
+#### Step 1: Download nifectl
 
- https://github.com/nifetency/nifectl/releases
-
-Download:
-
-```text id="rpg9"
-nifectl-windows-amd64.zip
-```
+https://docs.nife.io/Quick-Start/Nifectl
 
 ---
 
-### 2. Extract
+#### Step 2: Open Terminal
 
-* Right-click → Extract All
-* Open folder
-
----
-
-### 3. Open Terminal
-
-* Type `cmd` in address bar
-
-OR
-
-* Right-click → Open in Terminal
+* Type `cmd` in the address bar
+  or
+* Right-click and select **Open in Terminal**
 
 ---
 
-### 4. Verify
+#### Step 3: Verify Installation
 
-```bash id="rpg10"
+```bash
 nifectl --help
 ```
 
 ---
 
-## Deployment using nifectl (CLI)
-
-### Prerequisites
-
-* nifectl installed
-* NIFE account
-
----
+### Deployment Steps
 
 ### Step 1: Login
 
