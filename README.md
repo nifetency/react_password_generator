@@ -8,16 +8,10 @@ Ideal for learning React fundamentals and demonstrating deployment using Docker 
 
 ---
 
-## Live Demo
-
-👉 https://fervent-volhard-f2991a.netlify.app/
-
----
-
 ## Overview
 
 * Generate strong, secure passwords
-* Customize password length
+* Customise password length
 * Include/exclude character types
 * Responsive and fast UI
 * Beginner-friendly React project
