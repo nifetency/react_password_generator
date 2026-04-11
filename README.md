@@ -103,7 +103,10 @@ docker run -p 3000:3000 react-password-generator
 
 Deploy using NIFE UI:
 
-**Source → Build → Resources → Review → Deploy**
+Log in to https://launch.nife.io/
+
+Go to Applications and select deployment wizard. 
+Follow the deployment docs at https://docs.nife.io/overview/quick-deploy
 
 ---
 
