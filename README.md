@@ -205,8 +205,7 @@ This version has been adapted and documented as a sample deployment project for 
 
 ## License
 
-This project is licensed under the **MIT License**. Please add the `LICENSE` file to the repository root so the license is displayed correctly on GitHub.
-
+This project is licensed under the **MIT License**. 
 ## References
 
 [1]: https://nife.io "Nife.io"
