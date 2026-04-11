@@ -1,312 +1,219 @@
 # React Password Generator
 
-A simple and interactive Password Generator built using **React.js**.
+A simple **React.js** application for generating secure passwords, published as a **sample deployment project for [Nife.io](https://nife.io)**.
 
-This application allows users to generate secure passwords based on selected criteria such as length, symbols, numbers, and uppercase/lowercase letters.
+This repository demonstrates how to run a lightweight frontend application locally, package it with Docker, and deploy it using [Nife.io](https://nife.io). It is intended as a practical sample for testing frontend deployment workflows and showcasing a simple React deployment path on Nife.io.
 
-Ideal for learning React fundamentals and demonstrating deployment using Docker and NIFE.
+## Why this repository exists
 
----
+This project is designed as a **deployment sample** as much as an application demo. The password generator itself is intentionally lightweight, which makes it useful for validating local development, containerization, CI/CD, and deployment workflows without the overhead of a large codebase.
 
-## Overview
-
-* Generate strong, secure passwords
-* Customise password length
-* Include/exclude character types
-* Responsive and fast UI
-* Beginner-friendly React project
-
----
+If you want a small frontend app to test deployment on [Nife.io](https://nife.io), this repository is a good starting point.
 
 ## Features
 
-* Uppercase letters
-* Lowercase letters
-* Numbers
-* Symbols
-* Adjustable password length
-* Instant generation
-
----
+| Feature | Description |
+| --- | --- |
+| Password generation | Generates a random password instantly |
+| Length control | Lets users choose a password length between 8 and 26 characters |
+| Character options | Supports uppercase letters, lowercase letters, numbers, and symbols |
+| Clipboard copy | Allows copying the generated password directly from the UI |
+| Toast notifications | Displays success and validation messages during use |
+| Deployment-ready structure | Includes Docker, Nife configuration, and deployment workflow support |
 
 ## Tech Stack
 
-* React.js
-* JavaScript (ES6+)
-* HTML5 & CSS3
-* Docker
+| Technology | Purpose |
+| --- | --- |
+| React.js | Frontend framework |
+| JavaScript (ES6+) | Application logic |
+| HTML5 and CSS3 | User interface and styling |
+| React Toastify | UI notifications |
+| Docker | Containerized packaging |
+| Nife.io | Deployment platform |
+| GitHub Actions | Automated deployment workflow |
 
----
-
-## Quick Start
+## Getting Started
 
 ### Prerequisites
 
-* Node.js (v14+)
-* npm or yarn
-* Git
+For local development, install **Git**, **Node.js**, and **npm**. Because this project uses an older React Scripts setup, **Node.js 16** is the safest option for local compatibility.
 
----
+### Clone the repository
 
-### 1. Clone Repository
-
-```bash id="rpg1"
+```bash
 git clone https://github.com/nifetency/react_password_generator.git
 cd react_password_generator
 ```
 
----
+### Install dependencies
 
-### 2. Install Dependencies
-
-```bash id="rpg2"
+```bash
 npm install
 ```
 
----
+### Start the development server
 
-### 3. Run Application
-
-```bash id="rpg3"
+```bash
 npm start
 ```
 
----
+### Open the application
 
-### 4. Open in Browser
-
-```id="rpg4"
+```text
 http://localhost:3000
 ```
 
----
+## Available Scripts
 
-## Docker Usage
+| Script | Description |
+| --- | --- |
+| `npm start` | Starts the development server |
+| `npm run build` | Creates a production build |
+| `npm test` | Runs the test runner |
+| `npm run eject` | Ejects the Create React App configuration |
 
-### Build Image
+## Run with Docker
 
-```bash id="rpg5"
+This repository includes a Dockerfile for containerized execution.
+
+### Build the Docker image
+
+```bash
 docker build -t react-password-generator .
 ```
 
----
+### Run the container
 
-### Run Container
-
-```bash id="rpg6"
+```bash
 docker run -p 3000:3000 react-password-generator
 ```
 
----
+After the container starts, open the app at `http://localhost:3000`.
 
-## Deployment on NIFE
+## Deploy on Nife.io
 
-Deploy using NIFE UI:
+You can deploy this application on [Nife.io](https://nife.io) using either the web console, a Docker image, the source repository, or the CLI.
 
-Log in to https://launch.nife.io/
+### Option 1: Deploy from a Docker image
 
-Go to Applications and select deployment wizard. 
-Follow the deployment docs at https://docs.nife.io/overview/quick-deploy
+First, build and push the image to your preferred container registry.
 
----
-
-### Method 1: Docker Image (Recommended)
-
-#### Step 1: Build & Push Image
-
-```bash id="rpg7"
+```bash
 docker build -t react-password-generator .
 docker tag react-password-generator <username>/react-password-generator:latest
 docker push <username>/react-password-generator:latest
 ```
 
----
+Then create a new application in Nife.io with the following settings.
 
-#### Step 2: Configure in NIFE
+| Setting | Value |
+| --- | --- |
+| Source | Docker Image |
+| Image | `<username>/react-password-generator:latest` |
+| Internal Port | `3000` |
+| External Port | `80` |
+| Suggested Replicas | `1` |
 
-* Source → Docker Image
-* Image → `<username>/react-password-generator:latest`
+### Option 2: Deploy from the Git repository
 
-**Ports**
+You can also deploy the project directly from GitHub through [Nife.io](https://nife.io).
 
-* Internal → `3000`
-* External → `80`
+| Setting | Value |
+| --- | --- |
+| Source | Git Repository |
+| Provider | GitHub |
+| Branch | `main` |
+| Internal Port | `3000` |
+| External Port | `80` |
+| Build Mode | Auto-Dockerize with runtime |
 
----
+### Option 3: Deploy with `nifectl`
 
-#### Step 3: Resources
-
-* Region → `ap-south-1`
-* CPU → selected
-
-**Recommended**
-
-* CPU → 250m–500m
-* Memory → 512MB–1GB
-* Replicas → 1–2
-
----
-
-#### Step 4: Deploy
-
-Click **Deploy**
-
----
-
-### Method 2: Git Repository
-
-#### Step 1: Source
-
-* Select GitHub repo
-* Branch → `main`
-
----
-
-#### Step 2: Build
-
-* Internal Port → `3000`
-* External Port → `80`
-* Enable **Auto-Dockerize with Runtime**
-
----
-
-#### Step 3: Security
-
-* SAST
-* SCA
-* Container Scan
-* IaC Scan
-
----
-
-#### Step 4: Resources & Deploy
-
-* Configure resources
-* Click **Deploy**
-
----
-
-## Access Application
-
-```id="rpg8"
-https://<your-nife-url>
-```
-
----
-
-##  Install nifectl CLI (Windows)
-
-Follow these steps to install and set up **nifectl**:
-
-#### Step 1: Download nifectl
-
-https://docs.nife.io/Quick-Start/Nifectl
-
----
-
-#### Step 2: Open Terminal
-
-* Type `cmd` in the address bar
-  or
-* Right-click and select **Open in Terminal**
-
----
-
-#### Step 3: Verify Installation
+If you prefer the command line, use the following workflow.
 
 ```bash
-nifectl --help
-```
-
----
-
-### Deployment Steps
-
-### Step 1: Login
-
-```bash id="rpg11"
 nifectl auth login
-```
-
----
-
-### Step 2: Initialize
-
-```bash id="rpg12"
 nifectl init
-```
-
-* Source → Repository
-* Provider → GitHub
-* Branch → `main`
-
----
-
-### Step 3: Configure
-
-* Deployment → Deployment
-* Resource → CPU
-* Replicas → 1
-
-**Ports**
-
-* Internal → `3000`
-* External → `80`
-
----
-
-### Step 4: Deploy
-
-```bash id="rpg13"
 nifectl deploy
 ```
 
----
+During initialization, select the repository source, choose GitHub as the provider, and use the `main` branch.
 
-### Step 5: Select Region
+For step-by-step instructions, see the [Nife.io Quick Deploy documentation](https://docs.nife.io/overview/quick-deploy) and the [nifectl quick start guide](https://docs.nife.io/Quick-Start/Nifectl).
 
-* Choose region (e.g., Mumbai)
+## Deployment Configuration Summary
 
----
+This repository already includes a `nife.toml` file with deployment settings.
 
-### Step 6: Monitor
+| Setting | Value |
+| --- | --- |
+| Internal service port | `3000` |
+| Public ports | `80`, `443` |
+| Request CPU | `250m` |
+| Request memory | `512Mi` |
+| Limit CPU | `500m` |
+| Limit memory | `1Gi` |
+| Routing policy | `latency` |
+| Auto rollback | Enabled |
 
-* Build → Release → Deploy
+## Continuous Deployment
 
----
+The repository includes a GitHub Actions workflow that triggers deployment on pushes to the `main` and `master` branches.
 
-### Step 7: Access
+To use that workflow, configure the following repository secret.
 
-* Open generated URL
+| Secret | Purpose |
+| --- | --- |
+| `NIFE_ACCESS_TOKEN` | Authenticates automated deployment to Nife.io |
 
----
+## Repository Structure
 
-## Dependencies
-
-| Dependency | Purpose            |
-| ---------- | ------------------ |
-| React      | Frontend framework |
-| Node.js    | Runtime            |
-| npm        | Package manager    |
-
----
+| Path | Purpose |
+| --- | --- |
+| `src/` | React application source code |
+| `public/` | Static public assets |
+| `build/` | Production build output |
+| `.github/workflows/` | Deployment automation workflow |
+| `Dockerfile` | Container build instructions |
+| `nife.toml` | Nife deployment configuration |
+| `package.json` | Project metadata, scripts, and dependencies |
 
 ## Environment Variables
 
 | Variable | Description | Default |
-| -------- | ----------- | ------- |
-| PORT     | App port    | 3000    |
-
----
+| --- | --- | --- |
+| `PORT` | Local application port | `3000` |
 
 ## Troubleshooting
 
-| Issue             | Solution                       |
-| ----------------- | ------------------------------ |
-| npm install fails | Check Node version             |
-| App not starting  | Run `npm start`                |
-| Port in use       | Change port                    |
-| Docker issues     | Start Docker                   |
-| Build fails       | Clear node_modules & reinstall |
-| ImagePullErr      | Make Docker image public       |
-| Blank screen      | Check browser console          |
+| Issue | Suggested fix |
+| --- | --- |
+| Dependencies fail to install | Confirm that Node.js and npm are installed correctly |
+| React app fails to start on newer Node versions | Try Node.js 16 for local development compatibility |
+| Port `3000` is already in use | Stop the conflicting process or change the local port mapping |
+| Docker build fails | Rebuild the image after checking the Dockerfile and dependencies |
+| Deployment cannot pull the image | Ensure that the image exists and is accessible in the registry |
+| App loads with a blank screen | Check browser console errors and deployment logs |
+
+
+## Acknowledgements
+
+This project is based on the original [`react_password_generator`](https://github.com/Megh2507/react_password_generator) repository by [@Megh2507](https://github.com/Megh2507).
+
+This version has been adapted and documented as a sample deployment project for [Nife.io](https://nife.io).
+
+## License
+
+This project is licensed under the **MIT License**. Please add the `LICENSE` file to the repository root so the license is displayed correctly on GitHub.
+
+## References
+
+[1]: https://nife.io "Nife.io"
+[2]: https://docs.nife.io/overview/quick-deploy "Nife.io Quick Deploy"
+[3]: https://docs.nife.io/Quick-Start/Nifectl "Nifectl Quick Start"
+[4]: https://github.com/nifetency/react_password_generator "nifetency/react_password_generator"
+[5]: https://github.com/Megh2507/react_password_generator "Original react_password_generator repository"
+
+
+live
