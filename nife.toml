@@ -1,6 +1,6 @@
-app = "brave-stack-5655"
-github = "https://github.com/rahul-nife/react_password_generator"
-id = "df569daa8e32d221bd1e404d281dd30e4952e5f71c82bb94a9c0fd3b75e679c8461ca8bef77315f211ff95e0c4a6d31b"
+app = "quiet-fox-8676"
+github = "https://github.com/nifetency/react_password_generator"
+id = "afeeba1e52bf3c68b215deedce3b4d49929942ca4d8678cc87ce8eaf66292de469bb3d6c5d094ca2e3bf886497375baf"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "250m"
-    memory = "512Mi"
+    cpu = "187m"
+    memory = "246Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
