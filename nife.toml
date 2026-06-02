@@ -1,6 +1,6 @@
-app = "happy-wave-9889"
+app = "lucky-stack-8002"
 github = "https://github.com/nifetency/react_password_generator"
-id = "4fbd06e6d90ba8ff03060dead2fa49b50c83e7398a31c342a83a54d27c983bbf563422e9314c72fb6bd4a3ba35b27f6c"
+id = "7cc6e1608e25f88e6da414a67979f7868ce7f05441ce43754467c263839c281550047769a6fe6c9d98c580edbb5f7ed7"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
