@@ -1,6 +1,6 @@
-app = "quiet-fox-8676"
+app = "lucky-stack-8002"
 github = "https://github.com/nifetency/react_password_generator"
-id = "afeeba1e52bf3c68b215deedce3b4d49929942ca4d8678cc87ce8eaf66292de469bb3d6c5d094ca2e3bf886497375baf"
+id = "7cc6e1608e25f88e6da414a67979f7868ce7f05441ce43754467c263839c281550047769a6fe6c9d98c580edbb5f7ed7"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
@@ -14,7 +14,7 @@ kill_timeout = 5
   auto_rollback = true
 
 [[services]]
-  external_port = "3000"
+  external_port = "80"
   http_checks = []
   internal_port = "3000"
   protocol = "tcp"
@@ -39,8 +39,8 @@ kill_timeout = 5
     port = 443
 
   [services.requests]
-    cpu = "187m"
-    memory = "246Mi"
+    cpu = "250m"
+    memory = "512Mi"
 
   [[services.tcp_checks]]
     grace_period = "1s"
