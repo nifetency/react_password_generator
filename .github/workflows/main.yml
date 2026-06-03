@@ -1,10 +1,7 @@
 name: Deploy to Nif
 
 on:
-  push:
-    branches:
-      - main
-      - master
+ workflow_dispatch:  
 
 jobs:
   deploy:
@@ -19,4 +16,12 @@ jobs:
         env:
           NIFE_ACCESS_TOKEN: ${{ secrets.NIFE_ACCESS_TOKEN }}
         with:
-          args: "site redeploy"
+          args: > 
+            site redeploy 
+              --git-url https://github.com/nifetency/react_password_generator 
+              --git-branch main
+              --git-provider github 
+              --install "npm install" 
+              --build "npm run build" 
+              --output build 
+              -y
