@@ -16,5 +16,6 @@ jobs:
         env:
           NIFE_ACCESS_TOKEN: ${{ secrets.NIFE_ACCESS_TOKEN }}
         with:
-          args: "nifectl site redeploy --git-url https://github.com/nifetency/react_password_generator --git-branch main --git-provider github --git-token none --framework React --install "npm install" --build "npm run build" --output build -y" 
+          with:
+          args: "site redeploy --git-url https://github.com/nifetency/react_password_generator --git-branch main --git-provider github --git-token '' --framework React --install \"npm install\" --build \"npm run build\" --output build -y"
             
