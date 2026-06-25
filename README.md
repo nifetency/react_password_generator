@@ -1,4 +1,3 @@
-```html
 <div align="center">
 
 <h3 align="center"><b><u>Deploy this project Instantly</u></b></h3>
@@ -26,9 +25,6 @@
 </table>
 
 </div>
-```
-
-
 # React Password Generator
 
 A simple **React.js** application for generating secure passwords, published as a **sample deployment project for [Nife.io](https://nife.io)**.
