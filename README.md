@@ -1,36 +1,33 @@
+```html
 <div align="center">
 
 <h3 align="center"><b><u>Deploy this project Instantly</u></b></h3>
 
-<table>
-  <tr>
-    <td align="center">
-      <b>Application</b><br><br>
-      <a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
-        <img
-          src="https://launch.nife.io/deploy-on-nife.svg"
-          alt="Deploy Application on NIFE"
-          width="260"
-        />
-      </a>
-    </td>
+<table align="center">
+<tr>
 
-    <td width="40"></td>
+<td align="center">
+<b>Application</b><br><br>
+<a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
+<img src="https://launch.nife.io/deploy-on-nife.svg" width="260" alt="Deploy Application on NIFE">
+</a>
+</td>
 
-    <td align="center">
-      <b>Site</b><br><br>
-      <a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
-        <img
-          src="https://launch.nife.io/deploy-on-nife.svg"
-          alt="Deploy Site on NIFE"
-          width="260"
-        />
-      </a>
-    </td>
-  </tr>
+<td width="40"></td>
+
+<td align="center">
+<b>Site</b><br><br>
+<a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
+<img src="https://launch.nife.io/deploy-on-nife.svg" width="260" alt="Deploy Site on NIFE">
+</a>
+</td>
+
+</tr>
 </table>
 
 </div>
+```
+
 
 # React Password Generator
 
