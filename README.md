@@ -2,26 +2,35 @@
 
 <h3 align="center"><b><u>Deploy this project Instantly</u></b></h3>
 
-<a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
-  <img
-    src="https://launch.nife.io/deploy-on-nife.svg"
-    alt="Deploy Application on NIFE"
-    width="260"
-  />
-</a>
+<table>
+  <tr>
+    <td align="center">
+      <b>Application</b><br><br>
+      <a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
+        <img
+          src="https://launch.nife.io/deploy-on-nife.svg"
+          alt="Deploy Application on NIFE"
+          width="260"
+        />
+      </a>
+    </td>
 
-&nbsp;&nbsp;&nbsp;&nbsp;
+    <td width="40"></td>
 
-<a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
-  <img
-    src="https://launch.nife.io/deploy-on-nife.svg"
-    alt="Deploy Site on NIFE"
-    width="260"
-  />
-</a>
+    <td align="center">
+      <b>Site</b><br><br>
+      <a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
+        <img
+          src="https://launch.nife.io/deploy-on-nife.svg"
+          alt="Deploy Site on NIFE"
+          width="260"
+        />
+      </a>
+    </td>
+  </tr>
+</table>
 
 </div>
-
 
 # React Password Generator
 
@@ -166,18 +175,6 @@ nifectl deploy
 During initialization, select the repository source, choose GitHub as the provider, and use the `main` branch.
 
 For step-by-step instructions, see the [Nife.io Quick Deploy documentation](https://docs.nife.io/overview/quick-deploy) and the [nifectl quick start guide](https://docs.nife.io/Quick-Start/Nifectl).
-
-## Option 4: Deploy on NIFE OneClick
-
-Launch your own instance of **react_password_generator** with a single click.
-
-### Deploy as Application
-
-[![Deploy App on OneClick](https://img.shields.io/badge/🚀%20Deploy%20App%20on%20OneClick-6C2CF5?style=for-the-badge)](https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator)
-
-### Deploy as Site
-
-[![Deploy Site on OneClick](https://img.shields.io/badge/🌐%20Deploy%20Site%20on%20OneClick-22C55E?style=for-the-badge)](https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator)
 
 
 ## Deployment Configuration Summary
