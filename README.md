@@ -1,3 +1,28 @@
+<div align="center">
+
+<h3 align="center"><b><u>Deploy this project Instantly</u></b></h3>
+
+<a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
+  <img
+    src="https://launch.nife.io/deploy-on-nife.svg"
+    alt="Deploy Application on NIFE"
+    width="260"
+  />
+</a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
+  <img
+    src="https://launch.nife.io/deploy-on-nife.svg"
+    alt="Deploy Site on NIFE"
+    width="260"
+  />
+</a>
+
+</div>
+
+
 # React Password Generator
 
 A simple **React.js** application for generating secure passwords, published as a **sample deployment project for [Nife.io](https://nife.io)**.
