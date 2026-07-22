@@ -7,7 +7,7 @@
 
 <td align="center">
 <b>Application</b><br><br>
-<a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nifetency/react_password_generator">
+<a href="https://launch.nife.io/deploy-app/start?repository-url=https://github.com/nife-public/react_password_generator">
 <img src="https://launch.nife.io/deploy-on-nife.svg" width="260" alt="Deploy Application on NIFE">
 </a>
 </td>
@@ -16,7 +16,7 @@
 
 <td align="center">
 <b>Site</b><br><br>
-<a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nifetency/react_password_generator">
+<a href="https://launch.nife.io/deploy-site/start?repository-url=https://github.com/nife-public/react_password_generator">
 <img src="https://launch.nife.io/deploy-on-nife.svg" width="260" alt="Deploy Site on NIFE">
 </a>
 </td>
@@ -69,7 +69,7 @@ For local development, install **Git**, **Node.js**, and **npm**. Because this p
 ### Clone the repository
 
 ```bash
-git clone https://github.com/nifetency/react_password_generator.git
+git clone https://github.com/nife-public/react_password_generator.git
 cd react_password_generator
 ```
 
@@ -239,7 +239,7 @@ This project is licensed under the **MIT License**.
 [1]: https://nife.io "Nife.io"
 [2]: https://docs.nife.io/overview/quick-deploy "Nife.io Quick Deploy"
 [3]: https://docs.nife.io/Quick-Start/Nifectl "Nifectl Quick Start"
-[4]: https://github.com/nifetency/react_password_generator "nifetency/react_password_generator"
+[4]: https://github.com/nife-public/react_password_generator "nifetency/react_password_generator"
 [5]: https://github.com/Megh2507/react_password_generator "Original react_password_generator repository"
 
 
